@@ -1,0 +1,20 @@
+{%  extends 'base.html.twig' %}
+
+
+{% block body %}
+    <h1>Modifie les données de ton jambon !</h1>
+    <div class="add__ham__form">
+    {{ form_start(form) }}
+    {{ form_row(form.title) }}
+    {{ form_row(form.content) }}
+
+    {{ form_row(form.price) }}
+
+        <button type="submit">Modifier</button>
+            {{ form_end(form) }}
+            </div>
+
+
+    <a href="{{ path('app_ham') }}">Retour aux jambons</a>
+
+{% endblock %}
